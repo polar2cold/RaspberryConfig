@@ -1,0 +1,66 @@
+Hi! Thank you for installing the new and improved polar2config!
+Here's how to edit settings because you'll most likely be doing a lot of that
+(Quick note, this is just my personal config, meaning I have a lot of weird
+settings you'll definately want to change right away)
+
+Step 1. Find what you want to edit. 
+
+It's pretty simple here's what each .cfg file is for
+
+autoexec.cfg - Executes all the non class specific .cfg files, don't change this
+
+binds.cfg - All of the keybinds are here, so if you need to change something related to that,
+go here. If you're confused on how to change something, here's a quick summary.
+
+	bind (key) (command)
+
+config.cfg - Don't change anything here, it's just what the game looks at for settings,
+but the autoexec.cfg will change it for you
+
+settings.cfg - Any settings that can be changed from in-game menu's are here,
+so things like volume or sensitivity would be here
+
+gfx.cfg - More advanced video settings. I don't think you'd need to go here unless you're editing
+a specific obscure command like mat_phong or mat_specular
+
+network.cfg - Network settings. Don't change anything here unless you know what you're doing
+
+custom.cfg - Any custom commands that are not listed in any previously mentioned files go here
+
+(class).cfg - cfg files named something like "demoman.cfg" or "spy.cfg" are files that will
+execute when you pick that class. So for example, if you put "volume 0.09" in "engineer.cfg"
+would make it so when you swap to engie, your volume gets changed to 0.09. And if you put
+"volume 0.04" in "scout.cfg", your volume would be turned to 0.04 if you switched to scout.
+
+Step 2. Edit it
+
+Now that you're in the cfg file you want to edit, it's time to do that. 
+You'll want to find the command or bind or whatever you want to edit, the easiest way to do that
+is to use that ctrl+f shortcut, and search for the command you want to change. 
+For example I would search something like "mat_motionblur" (with no quotations), and then change
+the value of the command.
+
+Step 2 And A Half. Command values
+
+Command values are easy just hard to understand at first, so here you go.
+
+- If a command uses either 0 or 1, it means that,
+	0 = False/Disabled
+	1 = True/Enabled
+
+- If a command uses other numbers, it means that said number corresponds the command as you'd expect,
+so for example things like sensitivity, volume, fov, etc.
+
+Step 3. SAVE THE FILE YOU DUMMY
+
+MAKE SURE YOU SAVE THE FILE otherwise it wont save :>
+
+Step 4. Testing
+
+You can actually test changes without having to restart your game!
+Just type "exec autoexec" in console, and it'll execute all your cfg files.
+If it's a class specific cfg file, either swap to that class, or type "exec (class name)" in console
+
+Step 5. Profit
+
+That's it! If you have any questions or need help, just let me know and I'll help you out asap!
