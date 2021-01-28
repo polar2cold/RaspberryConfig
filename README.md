@@ -18,6 +18,8 @@ A config for new and old tf2 players to get into scripting and config creating.
   
   -Left alt calls for spy
   
+  -Hitting "L" toggles chat on/off
+  
   -You can use both shift and control to crouch
   
   -Pressing n toggles viewmodels on/off
